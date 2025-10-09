@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="./manifest.json" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.C6t_SJdo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CUyBw6CY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BHQj582O.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D9R8M_W_.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/jVL9F34l.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/cx1BIPlP.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D93nh56j.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BgKziBAm.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DsnmJJEf.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1nm36j4 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.C6t_SJdo.js"),
+						import("./_app/immutable/entry/app.D93nh56j.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>
